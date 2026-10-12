@@ -1,0 +1,71 @@
+.bike-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.bike-card:hover {
+  box-shadow: var(--shadow);
+  transform: translateY(-2px);
+}
+.bike-card__media {
+  position: relative;
+}
+.bike-card__save {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.92);
+  color: var(--muted);
+}
+.bike-card__save:hover,
+.bike-card__save--active {
+  color: var(--primary);
+}
+.bike-card__condition {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.92);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+.bike-card__body {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+.bike-card__body h3 {
+  font-size: 1.05rem;
+}
+.bike-card__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 14px;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+.bike-card__meta li {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.bike-card__price {
+  margin-top: auto;
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--primary-dark);
+}

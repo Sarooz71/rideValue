@@ -1,0 +1,47 @@
+.history {
+  padding-bottom: 40px;
+}
+.history__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.history__list {
+  display: grid;
+  gap: 14px;
+}
+.history__item {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  align-items: center;
+  gap: 20px;
+  padding: 18px 22px;
+}
+.history__info h3 {
+  font-size: 1.05rem;
+}
+.history__info p {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+.history__date {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+.history__price {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--primary-dark);
+}
+.history__actions {
+  display: flex;
+  gap: 6px;
+}
+@media (max-width: 640px) {
+  .history__item {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+}

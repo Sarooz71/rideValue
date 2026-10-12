@@ -1,0 +1,45 @@
+.pform {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.pform__section {
+  border: none;
+  min-width: 0;
+}
+.pform__section legend {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--primary);
+  margin-bottom: 14px;
+}
+.pform__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+.pform__checks {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 18px;
+}
+.pform__check {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+.pform__check input {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--primary);
+}
+@media (max-width: 600px) {
+  .pform__grid {
+    grid-template-columns: 1fr;
+  }
+}

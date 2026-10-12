@@ -1,0 +1,12 @@
+.predict {
+  padding-bottom: 40px;
+}
+.predict__form {
+  max-width: 760px;
+}
+.predict__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
